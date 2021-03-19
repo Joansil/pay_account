@@ -68,7 +68,7 @@ To start your Phoenix server:
       }
     }
 
-   * To make a transfer, you have to had more than 1 user, so you can create another one, and take these account_id to make: from => id, to => id, just like this:
+   * To make a transfer, you have to had more than 1 user, so you can create another one, and take these account_id to make: from => form_id, to => to_id, just like this:
 
     curl X POST "http://localhost:4000/accounts/transfer" -H "accept: application/json" -H "content-type: application/json" -H "Authorization:Basic dXNlcjp1c2Vy" -d "{ \"from\": \"3a1c666f-28fd-4c7c-bb56-8908eed178f5\", \"to\": \"a41db0a9-34a6-42b6-8853-dc27d7e735d1\", \"value\": \"50.00\" }"
 
